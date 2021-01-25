@@ -28,6 +28,8 @@ class TestMainLoginPage(unittest.TestCase):
         loginButton.click()
 
     # if you create a method that doesn't start with 'test' it will NOT run automatically
+    # will this upload to github?
+
 
     # this runs at the end to close everything down
     # def tearDown(self):
