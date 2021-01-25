@@ -3,15 +3,18 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 # this class will test the main page login ONLY
-class mainLoginPageTest(unittest.TestCase):
+class TestMainLoginPage(unittest.TestCase):
 
+    # setup method always runs first and is specific to the .TestCase with Python
+    # kinda like the __init__ method
     def setUp(self):
         self.driver = webdriver.Chrome("./chromedriver")
         self.driver.maximize_window()
         # accesses test website
         self.driver.get("https://parabank.parasoft.com/parabank/index.htm")
 
-    def testLoginInputs(self):
+    # automatically runs since it starts with 'test'
+    def testLoginPage(self):
         # grab username input
         usernameInput = self.driver.find_element_by_name('username')
         # entering a username to login
@@ -24,8 +27,22 @@ class mainLoginPageTest(unittest.TestCase):
         loginButton = self.driver.find_element_by_xpath("//input[@value='Log In']")
         loginButton.click()
 
+    # if you create a method that doesn't start with 'test' it will NOT run automatically
+
+    # this runs at the end to close everything down
     # def tearDown(self):
-    #     self.driver.quit()
+    #     self.driver.close()
+
+
+
+# second class will test new page along with its functionality
+class TestAccountServicesPage(unittest.TestCase):
+
+    def testConfirmCorrectPage(self):
+        chromeDriver = self.driver
+        # just trying to confirm that the title page is accurate
+        self.assertEqual("ParaBank | Accounts Overview", chromeDriver.title )
+
 
 # runs the suite of tests mentioned above
 if __name__ == '__main__':
