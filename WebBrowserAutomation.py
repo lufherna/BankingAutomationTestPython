@@ -1,6 +1,7 @@
 import unittest
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+import Page
 
 
 # this class will test the main page login ONLY
@@ -10,7 +11,6 @@ class TestMainLoginPage(unittest.TestCase):
     #     self.driver = webdriver.Chrome("./chromedriver")
     #     self.driver.maximize_window()
     #     self.driver.implicitly_wait(10)
-        # accesses test website
 
     # setup method always runs first and is specific to the .TestCase with Python
     # kinda like the __init__ method
@@ -40,6 +40,8 @@ class TestMainLoginPage(unittest.TestCase):
         # assert makes sure that the test case ran successfully
         assert True
 
+
+
     # if you create a method that doesn't start with 'test' it will NOT run automatically
     # will this upload to github?
 
@@ -49,6 +51,7 @@ class TestMainLoginPage(unittest.TestCase):
 
 
 # second class will test new page along with its functionality
+# Once you're logged in this should run next
 class TestAccountServicesPage(unittest.TestCase):
 
     def testConfirmCorrectPage(self):
