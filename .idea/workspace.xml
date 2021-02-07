@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2996b3a-4100-471c-ac78-4147fad3d643" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Locators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Elements.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebBrowserAutomation.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebBrowserAutomation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -23,5 +23,4 @@ class MainPage(BasePage):
 class SearchResultPage(BasePage):
 
     def is_results_found(self):
-        
         return "No results found!" not in self.driver.page_source
